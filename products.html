@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SHOPPY<span class="text-dark">KART</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger" aria-current="page" href="BATA.Html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PRODUCTS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products.html"> Products</a></li>
+                            <li><a class="dropdown-item" href="single.html"> Products Single</a></li>
+                            <li><a class="dropdown-item" href="cart.html ">Cart page</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Blog page</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                            <li><a class="dropdown-item" href="#">Elements</a></li>
+                            <li><a class="dropdown-item" href="#">Error page</a></li>
+                            <li><a class="dropdown-item" href="Faq.html">FaQ</a></li>
+                           
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true" href="contact.html">CONTACT</a>
+                    </li>
+                    </li>
+                </ul>
+                <form class="List" role="search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: red;"></i>
+                </form>
+
+                <div class="a">
+                    <button class="btn btn-danger">
+                        <i class="fa-solid fa-user pt-1 pe-3"></i> Login
+                    </button>
+                </div>
+                <div class="c">
+                    <button class="btn btn-danger">
+                        <i class="fa-solid fa-bag-shopping pt-1 pe-3"></i>Cart
+                    </button>
+                </div>
+
+                <button class="toggle-btn" id="toggleBtn">
+                    <img src="image/moon-2935547_1280.webp" alt="Night Mode" width="20" height="20">
+                  </button>
+          
+          
+                  <script>
+                    const toggleBtn = document.getElementById('toggleBtn');
+                    const body = document.body;
+                    toggleBtn.addEventListener('click', () => {
+                      body.classList.toggle('night-mode');
+                      toggleBtn.classList.toggle('night-mode');
+                    });
+                  </script>
+          
+            </div>
+        </div>
+    </nav>
+
+    <div class="items">
+        <div class="container d-flex u">
+            <div class="title-content ">
+                <h3 class="card-title"><b> PRODUCTS</b></h3>
+            </div>
+            <div class=" ms-auto d-flex">
+                <a class="text-danger" href="BATA.Html">Home</a>
+                <p style="color: white;"><span class="fas fa-angle-double-right"></span> Products </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-lg-5 mt-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="start-bar">
+                    <div class="category-section">
+                        <h4>Product Categories</h4>
+                        <ul class="category-list">
+                            <li>
+                                <span>Accessories</span>
+                                <span class="category-count">14</span>
+                            </li>
+                            <li>
+                                <span>Suits</span>
+                                <span class="category-count">18</span>
+                            </li>
+                            <li>
+                                <span>Footwear</span>
+                                <span class="category-count">12</span>
+                            </li>
+                            <li>
+                                <span>Blazers</span>
+                                <span class="category-count">10</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter mt-5">
+                        <h4>
+                            Filter By Price
+                        </h4>
+                        <div class="slider-container">
+                            <div class="range-values">
+                                <span id="min-value">$50</span> - <span id="max-value">$6000</span>
+                            </div>
+                            <input type="range" min="50" max="6000" value="50" id="min-range" class="slider">
+                        </div>
+                    </div>
+                    <div class="discount-section">
+                        <h4>Discount</h4>
+                        <label class="checkbox-container">15% or More
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">20% or More
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">35% or More
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">55% or More
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">65% or More
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">75% or More
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="rating">
+                        <h4>
+                            Customer Ratings
+                        </h4>
+                    </div>
+
+                    <div class="rating-star">
+                        <i class="fa-solid fa-star fa-sm " style="color: grey"></i>
+                        <i class="fa-solid fa-star fa-sm" style="color:grey"></i>
+                        <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                        <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                        <i class="fa-solid fa-star fa-sm mt-3" style="color: grey"></i>
+                        <span style="color: #9b9ca0;">5.0</span>
+                        <div>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-sm mt-3" style="color: grey"></i>
+                            <span style="color: #9b9ca0;">4.0</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: white"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-sm mt-3" style="color: grey"></i>
+                            <span style="color: #9b9ca0;">3.5</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-sm mt-3" style="color: grey"></i>
+                            <span style="color: #9b9ca0;">3.0</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-star fa-sm" style="color:grey"></i>
+                            <i class="fa-solid fa-star fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-sm" style="color:grey"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-sm" style="color: grey"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-sm mt-3" style="color: grey"></i>
+                            <span style="color: #9b9ca0;">2.5</span>
+                        </div>
+                    </div>
+
+                    <div class="Recent mt-3">
+                        <h4>
+                            Recent Products
+                        </h4>
+                    </div>
+                    <div>
+                        <div class="card mb-3 mt-3 no-border" style="max-width: 500px;">
+                            <div class="row g-0 ">
+                                <div class="col-md-4 ">
+                                    <img src="image/shop-8.jpg" class="img-fluid rounded-start" alt="shop-8">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body ">
+                                        <h5 class="card-title">Blue Sweater</h5>
+                                        <p class="card-text text-danger">$499.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 mt-3 no-border" style="max-width: 500px;">
+                            <div class="row g-0 ">
+                                <div class="col-md-4 ">
+                                    <img src="image/shop-7.jpg" class="img-fluid rounded-start" alt="shop-7">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body ">
+                                        <h5 class="card-title">White T-Shirt</h5>
+                                        <p class="card-text text-danger">$575.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="results">
+                            <h4>
+                                Showing All 9 Results
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="drop">
+                            <div class="sorting-dropdown">
+                                <button class="dropdown-button dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Default Sorting
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" style="color: gray">Sort By Popularity</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" style="color: gray">Sort By Average Rating</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" style="color: gray">Sort By Lastest</a></li>
+                                    <li><a class="dropdown-item" href="#" style="color: gray">Sort By Price: low to
+                                            high</a></li>
+                                    <li><a class="dropdown-item" href="#" style="color: gray">Sort By Price: high to low
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-1.jpg" class="card-img-top" alt="shop-1">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Checked Casual Shirt</b></p>
+                                    <p class="card-name"><span class="old-price"><del style="color: #9b9ca0;">$975.00</del></span><span class="text-danger"> 
+                                        <b>$899.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-2.jpg" class="card-img-top" alt="shop-2">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Cotton Flared Kurta</b></p>
+                                    <p class="card-name"><span class="old-price"><del
+                                                style="color: #9b9ca0;">$975.00</del></span> <span class="text-danger">
+                                            <b>$599.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-3.jpg" class="card-img-top" alt="shop-3">
+                                <div class="card-body">
+                                    <p class="card-text"> <b>Men Casual Shirt</b></p>
+                                    <p class="card-name"><span class="old-price"><del
+                                                style="color: #9b9ca0;">$975.00</del></span> <span class="text-danger">
+                                            <b>$799.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-4.jpg" class="card-img-top" alt="shop-4">
+                                <div class="card-body">
+                                    <p class="card-text"> <b>Blend Straight Kurta</b></p>
+                                    <p class="card-name"><span class="old-price"><del
+                                                style="color: #9b9ca0;">$975.00</del></span> <span class="text-danger">
+                                            <b>$399.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-5.jpg" class="card-img-top" alt="shop-5">
+                                <div class="card-body">
+                                    <p class="card-text"> <b>Women Maroon Top</b></p>
+                                    <p class="card-name"><span class="old-price"><del
+                                                style="color: #9b9ca0;">$975.00</del></span> <span class="text-danger">
+                                            <b>$299.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-6.jpg" class="card-img-top" alt="shop-6">
+                                <div class="card-body">
+                                    <p class="card-text"> <b>Pink Shirt</b></p>
+                                    <p class="card-name"><span class="old-price"><del
+                                                style="color: #9b9ca0;">$975.00</del></span> <span class="text-danger">
+                                            <b>$699.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-7.jpg" class="card-img-top" alt="shop-7">
+                                <div class="card-body">
+                                    <p class="card-text"> <b> Dark Blue Top</b></p>
+                                    <p class="card-name"><span class="old-price"><del
+                                                style="color: #9b9ca0;">$975.00</del></span> <span class="text-danger">
+                                            <b>$599.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-8.jpg" class="card-img-top" alt="shop-8">
+                                <div class="card-body">
+                                    <p class="card-text"> <b>White T-Shirt</b></p>
+                                    <p class="card-name"><span class="old-price"><del
+                                                style="color: #9b9ca0;">$975.00</del></span> <span class="text-danger">
+                                            <b>$599.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mt-5">
+                            <div class="card no-border" style="width: 14rem;">
+                                <img src="image/shop-9.jpg" class="card-img-top" alt="shop-9">
+                                <div class="card-body">
+                                    <p class="card-text"> <b>Pink Bag</b></p>
+                                    <p class="card-name"><span class="old-price"><del
+                                                style="color: #9b9ca0;">$975.00</del></span> <span class="text-danger">
+                                            <b>$599.99</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="card no-border text-bg-dark mt-3">
+                                <img src="image/banner5.jpg" class="card-img" alt="banner5"
+                                    style="filter: brightness(50%);">
+                                <div class="card-img-overlay">
+                                    <h2 class="card-bag"><b>Platform Velvet<br>Sandals </b></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="card no-border text-bg-dark mt-3">
+                                <img src="image/banner4.jpg" class="card-img" alt="banner4"
+                                    style="filter: brightness(50%);">
+                                <div class="card-img-overlay">
+                                    <h2 class="card-bag"><b>Pebbled Weekend<br> Bag </b></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h2><b class=" text-ligth">Special Offer All Branded Sandals Are<br> Flat 50% Discount</b></h2>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 class="text-uppercase text-wh mb-lg-4 mb-3">Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="text-uppercase text-wh mb-lg-4 mb-3">Information</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Delivery Terms</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">The Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer-view">
+                <h3>Address</h3>
+                <p>London, UK</p>
+                <p> 13h Street, Office 436</p>
+                <p> Harlo 61466</p>
+                <p>+21 255 999 8888
+                <p>ShoppyKart@mail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Payment Method</h3>
+                <div class="payment-methods">
+                    <img src="image/images visa.png" alt=" images Visa">
+                    <img src="image/discover.jpg" alt="discover">
+                    <img src="image/paypal.webp" alt="payPal">
+                    <img src="image/Mastercard_logo.webp" alt="Mastercard_logo">
+                    <img src="image/stripe img.jpg" alt="stripe">
+                    <img src="image/images american.jpeg" alt="images american">
+                    <img src="image/images jcb.png" alt="images jcb">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class=" col-lg-6 footer-bottom">
+                    <p> @2021 ShoppyKart. All rights reserved | Designed by <a href="#"
+                            style="color: #fff;">W3layouts</a></p>
+                </div>
+                <div class="col-lg-6 social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook fa-lg p-3" style=" background-color: red;"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter fa-lg p-3" style="background-color: red;"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg p-3" style="background-color: red;"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in fa-lg p-3" style="background-color: red;"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

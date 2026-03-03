@@ -1,0 +1,324 @@
+.items {
+    background-image: url(image/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 50vh;
+    width: 100%;
+}
+
+.items h3 {
+   color: white;
+ 
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-top: 1%;
+    color: red;
+}
+
+.nav-item {
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.List{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.a button {
+    margin-left: 100%;
+    font-size: 1.1rem;
+    display: flex;
+
+}
+
+.c button {
+    margin-left: 120%;
+    font-size: 1.1rem;
+    display: flex;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.night-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn.night-mode {
+    background-color: #333333;
+}
+
+
+
+.u{
+    padding-top: 10%;
+}
+
+
+
+.our {
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.f{
+    margin-top: 2%;
+    font-size: 1.3rem;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card{
+    margin-left: 5%;
+    margin-top: 30%;
+}
+
+.card i{
+   background-color: red;
+
+}
+
+.banner {
+    background-image: url(image/banner6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.offer {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+   
+}
+
+.contact-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.y .content{
+    margin-left: 3%;
+}
+
+.y .Us{
+    margin-right: 5%;
+}
+
+
+.Team{
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.social {
+    position: absolute;
+    right: 13%;
+    margin-top: 130%;
+    
+}
+
+.social a {
+    color: red;
+    display: inline-block;
+}
+
+.social span {
+    font-size: 1.2rem;
+    margin-left: 2%;
+}
+
+.member{
+    position: absolute;
+    bottom: -20%;
+    left: 5%;
+    right: 5%;
+    background: white;
+    padding: 5% 5%;
+
+
+}
+.member h4 {
+    font-size: 1.3rem;
+}
+
+.member span {
+    font-size: 1.3rem;
+}
+
+.semper{
+    color: #8c9398;
+    font-size: 1.2rem;
+}
+
+
+.footer {
+    background-color: #111;
+    padding: 2% ;
+    margin-top: 19%;
+
+}
+
+.footer h2 {
+    margin-left: 5%;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+.footer-column {
+    flex: 1;
+    margin-left: 4%;
+
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 10%;
+    margin-left: 8%;
+    color: white;
+
+}
+
+.footer-column ul {
+    list-style-type: none;
+
+}
+
+.footer-column ul li {
+    margin: 3% 0;
+}
+
+.footer-column ul li a {
+    color: #8c9398;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.footer-view {
+    color: #8c9398;
+}
+
+.footer-view h3 {
+    font-size: 1rem;
+    color: #efeeee;
+}
+
+.footer-view p:hover {
+    color: white;
+}
+
+
+.footer-column p {
+    color: #8c9398;
+    font-size: 1rem;
+
+}
+
+.footer-bottom {
+    padding-top: 5%;
+
+}
+
+.footer-bottom p {
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+
+
+.social-icons {
+    padding-top: 4%;
+    padding-left: 25%;
+}
+
+.payment-methods img {
+    width: 18%;
+    margin: 1%;
+}
+
+.social-icons a {
+    color: #fff;
+   
+}
+
+.social-icons a i {
+    font-size: 1rem;
+    
+}
+
+
+
