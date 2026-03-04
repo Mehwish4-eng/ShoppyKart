@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoppyKart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="ShoppyKart.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SHOPPY<span class="text-dark">KART</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PRODUCTS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html"> Products</a></li>
+              <li><a class="dropdown-item" href="single.html"> Products Single</a></li>
+              <li><a class="dropdown-item" href="cart.html">Cart page</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PAGES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog page</a></li>
+              <li><a class="dropdown-item" href="#">Blog Single</a></li>
+              <li><a class="dropdown-item" href="#">Elements</a></li>
+              <li><a class="dropdown-item" href="#">Error page</a></li>
+              <li><a class="dropdown-item" href="Faq.html">FaQ</a></li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link " aria-disabled="true" href="contact.html">CONTACT</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <i class="fa-solid fa-magnifying-glass" style="color: red;"></i>
+        </form>
+
+        <div class="a">
+          <button class="btn btn-danger">
+            <i class="fa-solid fa-user pt-1 pe-3"></i> Login
+          </button>
+        </div>
+        <div class="c">
+          <button class="btn btn-danger">
+            <i class="fa-solid fa-bag-shopping pt-1 pe-3"></i>Cart
+          </button>
+        </div>
+
+
+        <button class="toggle-btn" id="toggleBtn">
+          <img src="image/moon-2935547_1280.webp" alt="Night Mode" width="20" height="20">
+        </button>
+
+
+
+
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/banner1.jpg" class="d-block w-100" alt="banner1">
+        <div class="carousel-caption">
+          <p class="text-danger pt-2"><b>Up To 60% Of Now</b></p>
+          <h5><b>Mid Season Sale <br> 40%</b></h5>
+          <p><b>Final Clearance: Take 20% off 'Sale Must-Have'</b></p>
+          <button class="btn btn-danger">Start Shopping<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="image/banner2.jpg" class="d-block w-100" alt="banner2">
+        <div class="carousel-caption">
+          <p class="text-danger pt-2"><b>Fall Summer Clearance</b></p>
+          <h5><b>Enjoy The Season <br> Sale</b></h5>
+          <p><b>Final Clearance: Take 20% off 'Sale Must-Have'</b></p>
+          <button class="btn btn-danger">Start Shopping<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="image/banner3.jpg" class="d-block w-100" alt="banner3">
+        <div class="carousel-caption banner1">
+          <p class="text-danger pt-2"><b>Up To 60% Of Now</b></p>
+          <h5><b>Mid Season Sale<br>40%</b></h5>
+          <p><b>Final Clearance: Take 20% off 'Sale Must-Have'</b></p>
+          <button class="btn btn-danger">Start Shopping <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="f">
+    <p> <b>Free Shipping For You Till Midnight</b>
+      <i class="fa-solid fa-truck-fast"></i>
+    </p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card text-bg-dark">
+          <img src="image/banner5.jpg" class="card-img" alt="banner5" style="filter: brightness(50%);">
+          <div class="card-img-overlay">
+            <h5 class="card-bag"><b>Platform Velvet<br>Sandals</b></h5>
+            <button type="button" class="btn btn-danger">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card text-bg-dark">
+          <img src="image/banner4.jpg" class="card-img" alt="banner4" style="filter: brightness(50%);">
+          <div class="card-img-overlay pt-4">
+            <h5 class="card-week"><b>Pebbled Weekend<br> Bag</b></h5>
+            <button type="button" class="btn btn-danger">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h">
+    <h2>
+      <b>Deals Of The Days</b>
+    </h2>
+  </div>
+
+  <!-- deals first -->
+  <div class="container slide">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="card no-border" style="width: 10rem;">
+          <img src="image/d1.jpg" class="card-img-top" alt="d1">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 40% Off on Formal Wear</b></p>
+          </div>
+        </div>
+      </div>
+      <!-- second deals -->
+      <div class="col-lg-2">
+        <div class="card no-border" style="width: 10rem;">
+          <img src="image/d2.jpg" class="card-img-top" alt="d2">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 60% Off on Active Wear</b></p>
+          </div>
+        </div>
+      </div>
+      <!-- three deals -->
+      <div class="col-lg-2">
+        <div class="card no-border" style="width: 10rem;">
+          <img src="image/d3.jpg" class="card-img-top" alt="d3">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 40% Off on Shoes</b></p>
+          </div>
+        </div>
+      </div>
+      <!-- four deals -->
+      <div class="col-lg-2">
+        <div class="card no-border" style="width: 10rem;">
+          <img src="image/d4.jpg" class="card-img-top" alt="d4">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 50% Off on Shirts</b></p>
+          </div>
+        </div>
+      </div>
+      <!-- five deals -->
+      <div class="col-lg-2">
+        <div class="card no-border" style="width: 10rem;">
+          <img src="image/d5.jpg" class="card-img-top" alt="d5">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 50% Off on Clothing</b></p>
+          </div>
+        </div>
+      </div>
+      <!-- six deals -->
+      <div class="col-lg-2">
+        <div class="card no-border" style="width: 10rem;">
+          <img src="image/d6.jpg" class="card-img-top" alt="d6">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 60% Off on Sandles</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="g">
+    <h2>
+      <b>
+        Best Discounts for You
+      </b>
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d7.jpg" class="card-img-top" alt="d7">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 40% Off on Swings</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d8.jpg" class="card-img-top" alt="d8">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 30% Off on Office Chairs</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d9.jpg" class="card-img-top" alt="d9">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 40% Off on Glass Mirror</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d10.jpg" class="card-img-top" alt="d10">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 50% Off on Makeup Kit</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d11.jpg" class="card-img-top" alt="d11">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 60% Off on Handbgs</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d12.jpg" class="card-img-top" alt="d12">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 40% Off on Perfumes</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="m">
+    <h2>
+      <b>
+        Best Offers for You
+      </b>
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d13.jpg" class="card-img-top" alt="d13">
+          <div class="card-body">
+            <p class="card-text"><b>40% Off on Kids Wear</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d14.jpg" class="card-img-top" alt="d14">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 30% Off on Face Packs</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d15.jpg" class="card-img-top" alt="d15">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 30% Off on Women Heels</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d16.jpg" class="card-img-top" alt="d16">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 40% Off on Baby Toys</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d17.jpg" class="card-img-top" alt="d17">
+          <div class="card-body">
+            <p class="card-text"><b>Min. 60% Off on Herbal Products</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card  no-border" style="width: 10rem;">
+          <img src="image/d18.jpg" class="card-img-top" alt="d18">
+          <div class="card-body">
+            <p class="card-text"> <b>30% Off on Office Chairs</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- video -->
+
+  <div class="banner">
+    <h1> Pre-Fall Collection, That Mid-Summer
+      <br> Craving For Fall Styles?
+    </h1>
+    <i class="fa-solid fa-play" style="color: #ff0505;"></i>
+  </div>
+
+
+
+  <div class="n">
+    <h2>
+      <b>
+        Shop With Us
+      </b>
+    </h2>
+    <p>Handpicked Favourites just for you</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card no-border" style="width: 16rem;">
+          <img src="image/shop-1.jpg" class="card-img-top" alt="shop-1">
+          <div class="card-body">
+            <p class="card-text"> <b>Checked Casual Shirt</b></p>
+            <p class="card-name"><span class="old-price"><del style="color: #9b9ca0;">$975.00</del></span> <span
+                class="text-danger">$899.99</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card no-border" style="width: 16rem;">
+          <img src="image/shop-2.jpg" class="card-img-top" alt="shop-2">
+          <div class="card-body">
+            <p class="card-text"> <b>Cotton Flared Kurta</b></p>
+            <p class="card-name"><span class="old-price"><del style="color: #9b9ca0;">$975.00</del></span> <span
+                class="text-danger">$899.99</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card no-border" style="width: 16rem;">
+          <img src="image/shop-3.jpg" class="card-img-top" alt="shop-3">
+          <div class="card-body">
+            <p class="card-text"> <b>Men Casual Shirt</b></p>
+            <p class="card-name"><span class="old-price"><del style="color: #9b9ca0;">$975.00</del></span> <span
+                class="text-danger">$899.99</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card no-border" style="width: 16rem;">
+          <img src="image/shop-4.jpg" class="card-img-top" alt="shop-4">
+          <div class="card-body">
+            <p class="card-text"> <b>Checkered Casual Shirt</b></p>
+            <p class="card-name"><span class="old-price"><del style="color: #9b9ca0;">$975.00</del></span> <span
+                class="text-danger">$899.99</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clients">
+    <div class="container py-lg-12 py-md-12 pt-5 pb-5">
+      <div class="row">
+        <div class="col-lg-4 py-sm-5 pt-0 py-3">
+          <div class="title-content text-left p-xl-3">
+            <h6 class="card-title"><b> Reviews</b></h6>
+            <h3 class="card-view"><b> What Clients Say ?</b></h3>
+            <p class="test-p mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3">
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="card-type">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel.</p>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <div class="profile-card">
+                              <img src="image/team1.jpg" alt="team1" class="profile-image">
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="profile-info">
+                              <h3>Johnson William</h3>
+                              <p>Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="card-type">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel.</p>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 demo">
+                            <div class="profile-card">
+                              <img src="image/team2.jpg" alt="team2" class="profile-image">
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="profile-info">
+                              <h3>Alexander Sakura</h3>
+                              <p>Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="card-type">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel.</p>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 demo">
+                            <div class="profile-card">
+                              <img src="image/team3.jpg" alt="team3" class="profile-image">
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="profile-info">
+                              <h3>John wilson</h3>
+                              <p>Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="card-type">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel.</p>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 demo">
+                            <div class="profile-card">
+                              <img src="image/team4.jpg" alt="team4" class="profile-image">
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="profile-info">
+                              <h3>Julia Sakura</h3>
+                              <p>Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="card-type">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 demo">
+                            <div class="profile-card">
+                              <img src="image/team2.jpg" alt="team2" class="profile-image">
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="profile-info">
+                              <h3>Alexander Sakura</h3>
+                              <p>Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="card-type">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4 demo">
+                            <div class="profile-card">
+                              <img src="image/team3.jpg" alt="team3" class="profile-image">
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="profile-info">
+                              <h3>John Wilson</h3>
+                              <p>Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w">
+    <i class="fa-regular fa-envelope" style="color: #e01010;"></i>
+    <h3><b>Get On The List</b></h3>
+    <p>Shop Exclusive Promos & SAVE 20% on Your First Order</p>
+  </div>
+
+  <form action="#" method="post" class="w3layouts-newsletter">
+    <input type="email" name="Email" placeholder="Enter your email" required>
+    <button class="btn btn-style btn-danger">
+      Subscribe
+    </button>
+  </form>
+
+  <div class="t">
+    <p>By entering your email, you are accepting our <a href="#" class="text-reset"><span class="text-danger"> Terms of
+          Use</span></a> and <br><a href="#" class="text-reset"></a><span class="text-danger">Privacy Policy</span></a>
+    </p>
+  </div>
+
+  <footer class="footer">
+    <h2><b class=" text-ligth">Special Offer All Branded Sandals Are<br> Flat 50% Discount</b></h2>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3 class="text-uppercase text-wh mb-lg-4 mb-3">Useful Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">News & Media</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 class="text-uppercase text-wh mb-lg-4 mb-3">Information</h3>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Delivery Terms</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">The Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-view">
+        <h3>Address</h3>
+        <p>London, UK</p>
+        <p> 13h Street, Office 436</p>
+        <p> Harlo 61466</p>
+        <p>+21 255 999 8888
+        <p>ShoppyKart@mail.com</p>
+      </div>
+      <div class="footer-column">
+        <h3>Payment Method</h3>
+        <div class="payment-methods">
+          <img src="image/images visa.png" alt=" images Visa">
+          <img src="image/discover.jpg" alt="discover">
+          <img src="image/paypal.webp" alt="payPal">
+          <img src="image/Mastercard_logo.webp" alt="Mastercard_logo">
+          <img src="image/stripe img.jpg" alt="stripe">
+          <img src="image/images american.jpeg" alt="images american">
+          <img src="image/images jcb.png" alt="images jcb">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class=" col-lg-6 footer-bottom">
+          <p> @2021 ShoppyKart. All rights reserved | Designed by <a href="#" style="color: #fff;">W3layouts</a></p>
+        </div>
+        <div class="col-lg-6 social-icons">
+          <a href="#"><i class="fa-brands fa-facebook fa-lg p-3" style=" background-color: red;"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter fa-lg p-3" style="background-color: red;"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg p-3" style="background-color: red;"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in fa-lg p-3" style="background-color: red;"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    const body = document.body;
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('night-mode');
+      toggleBtn.classList.toggle('night-mode');
+    });
+  </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+</body>
+
+</html>
